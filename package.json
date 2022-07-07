@@ -46,14 +46,14 @@
     "@commitlint/cli": "^17.0.3",
     "@commitlint/config-conventional": "^17.0.3",
     "eslint-config-prettier": "^8.5.0",
-    "husky": ">=6",
+    "husky": "^8.0.1",
     "lint-staged": ">=10",
     "prettier": "2.7.1"
   },
-  "husky":{
-    "hooks":{
-      "pre-commit":"lint-staged",
-      "commit-msg":"commitlint -E HUSKY_GIT_PARAMS"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
