@@ -1,5 +1,10 @@
-import React from "react";
+import React, { FormEvent } from "react";
 
 export default function index() {
-  return <div>index</div>;
+  const handleSubmit = (event:FormEvent<HTMLFormElement>)=>{
+    
+  }
+  return <form onSubmit={handleSubmit}>
+    <button type="submit">登录</button>
+  </form>
 }
